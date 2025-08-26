@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- For Intelligence -->
+    <link rel="stylesheet" href="./tailwind-intelligence.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Navigation -->
+      <nav class="bg-white px-14 py-6 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="./assets/bangladesh-railway.png"
+            alt="Logo"
+            class="w-16 h-16 object-contain"
+          />
+          <h3 class="font-bold text-2xl text-[#006747]">
+            Emergency <br />
+            Service
+          </h3>
+        </div>
+        <!-- User Info -->
+        <ul class="flex items-center gap-5">
+          <!-- Life -->
+          <button
+            class="flex items-center gap-2 px-8 py-3 rounded-4xl bg-[#41ff6b1a] cursor-pointer"
+          >
+            <span id="life" class="font-bold text-xl">0</span>
+            <img src="./assets/heart.png" alt="Life Icon" class="w-6 h-6" />
+          </button>
+          <!-- Coin -->
+          <button
+            class="flex items-center gap-2 px-8 py-3 rounded-4xl bg-[#41ff6b1a] cursor-pointer"
+          >
+            <span id="coin" class="font-bold text-xl">100</span>
+            <img src="./assets/coin.png" alt="Coin Icon" class="w-6 h-6" />
+          </button>
+          <!-- Copy -->
+          <button
+            class="flex items-center gap-2 px-8 py-3 rounded-4xl bg-[#00a63e] text-white font-semibold text-lg cursor-pointer"
+          >
+            <span id="copy">2</span> Copy
+          </button>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

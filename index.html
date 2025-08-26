@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
 
+    <link rel="shortcut icon" href="./assets/gob.svg" type="image/x-icon" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -31,7 +33,9 @@
     <!-- Header -->
     <header>
       <!-- Top Navigation -->
-      <nav class="bg-white px-14 py-6 flex justify-between items-center">
+      <nav
+        class="bg-white px-4 lg:px-14 py-6 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2 lg:gap-0"
+      >
         <!-- Logo -->
         <a class="flex items-center gap-2" href="/">
           <img
@@ -76,14 +80,16 @@
     >
       <img src="./assets/bangladesh-railway.png" alt="Logo" class="w-24 h-24" />
       <h1 class="font-bold text-3xl">জরুরি সেবা ডিরেক্টরি</h1>
-      <p class="font-semibold">
+      <p class="font-semibold text-center">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </div>
 
     <!-- Main Section -->
-    <div class="p-14 grid grid-cols-4 gap-5 bg-[#41ff6b1a]">
+    <main
+      class="p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 bg-[#41ff6b1a]"
+    >
       <!-- Row 1 - Cards -->
       <div class="grid gap-5">
         <!-- Card 01 -->
@@ -522,7 +528,10 @@
       </div>
 
       <!-- Row 4 - History -->
-      <div class="min-h-full bg-white rounded-xl p-8 drop-shadow-md space-y-5">
+      <div
+        id="call-history"
+        class="min-h-full bg-white rounded-xl p-8 drop-shadow-md space-y-5"
+      >
         <!-- History Title -->
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
@@ -589,6 +598,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

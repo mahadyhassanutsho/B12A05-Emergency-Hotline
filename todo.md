@@ -41,7 +41,7 @@
 
 ### 4. Responsiveness (5 Marks)
 
-- [ ] Make website **fully responsive for mobile devices**
+- [x] Make website **fully responsive for mobile devices**
 
 ---
 
@@ -87,16 +87,16 @@ Create a `Readme.md` and answer:
 
 ## ⚙️ Tech Stack
 
-- [ ] HTML
-- [ ] CSS (Vanilla / Tailwind / DaisyUI / Others)
-- [ ] JavaScript (Vanilla only)
+- [x] HTML
+- [x] CSS (Vanilla / Tailwind / DaisyUI / Others)
+- [x] JavaScript (Vanilla only)
 
 ---
 
 ## 📌 Rules
 
-- [ ] Min. **5 meaningful commits**
-- [ ] No Lorem Ipsum → Use **real content**
+- [x] Min. **5 meaningful commits**
+- [x] No Lorem Ipsum → Use **real content**
 
 ---
 

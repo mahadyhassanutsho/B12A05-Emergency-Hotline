@@ -9,10 +9,10 @@
 
 ### 2. Hero Section
 
-- [ ] Apply **background gradient** to whole section
-- [ ] Place **relevant logo** at top-center
-- [ ] Add **section title** in center
-- [ ] Add **slogan** at bottom-center
+- [x] Apply **background gradient** to whole section
+- [x] Place **relevant logo** at top-center
+- [x] Add **section title** in center
+- [x] Add **slogan** at bottom-center
 
 ### 3. Main Section
 

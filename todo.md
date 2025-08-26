@@ -16,28 +16,28 @@
 
 ### 3. Main Section
 
-- [ ] Create layout as Figma:
+- [x] Create layout as Figma:
   - **Card Section (9 parts)**
   - **History Section (3 parts)**
 
 #### Emergency Hotline Section
 
-- [ ] Show **min. 6 cards**
+- [x] Show **min. 6 cards**
 - Each card must contain:
-  - [ ] Icon or Image
-  - [ ] Relevant Name
-  - [ ] Relevant Name in English
-  - [ ] Hotline Number
-  - [ ] Category Badge
-  - [ ] 💗 Heart icon (left)
-  - [ ] **Copy button** with icon
-  - [ ] **Call button** with icon
+  - [x] Icon or Image
+  - [x] Relevant Name
+  - [x] Relevant Name in English
+  - [x] Hotline Number
+  - [x] Category Badge
+  - [x] 💗 Heart icon (left)
+  - [x] **Copy button** with icon
+  - [x] **Call button** with icon
 
 #### History Section
 
-- [ ] White background
-- [ ] Title with icon (top-left, as Figma)
-- [ ] Clear History button (top-right, as Figma)
+- [x] White background
+- [x] Title with icon (top-left, as Figma)
+- [x] Clear History button (top-right, as Figma)
 
 ### 4. Responsiveness (5 Marks)
 

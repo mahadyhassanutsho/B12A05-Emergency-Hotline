@@ -49,7 +49,7 @@
 
 ### Heart Icons
 
-- [ ] Clicking 💗 increases heart count in Navbar
+- [x] Clicking 💗 increases heart count in Navbar
 
 ### Call Buttons
 

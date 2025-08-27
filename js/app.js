@@ -5,9 +5,6 @@ const callHistoryContainerEl = document.getElementById(
   "call-history-container"
 );
 
-// Data
-const callHistory = [];
-
 // Handle All Clicks from `<main></main>`
 document.querySelector("main").addEventListener("click", (e) => {
   switch (true) {
@@ -37,11 +34,15 @@ document.querySelector("main").addEventListener("click", (e) => {
         coinCountEl.textContent = coinBalance - 20;
 
         // Add Call History
-        callHistory.push(serviceData);
         callHistoryContainerEl.innerHTML += generateCallHistory(serviceData);
       } else {
         alert("Not enough coins!");
       }
+      break;
+
+    // Handle Clear Call History
+    case e.target.id === "clear-call-history":
+      callHistoryContainerEl.innerHTML = "";
       break;
 
     default:

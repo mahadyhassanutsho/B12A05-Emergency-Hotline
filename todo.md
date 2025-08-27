@@ -60,8 +60,8 @@
 
 ### Call History Section
 
-- [ ] Show all called services (initially empty)
-- [ ] Add "Clear History" button → removes all history
+- [x] Show all called services (initially empty)
+- [x] Add "Clear History" button → removes all history
 
 ---
 

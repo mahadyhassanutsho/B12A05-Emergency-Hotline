@@ -69,11 +69,11 @@
 
 Create a `Readme.md` and answer:
 
-1. [ ] Difference between **getElementById, getElementsByClassName, querySelector, querySelectorAll**
-2. [ ] How to **create & insert a new element into DOM**
-3. [ ] What is **Event Bubbling** and how it works
-4. [ ] What is **Event Delegation** & why it’s useful
-5. [ ] Difference between **preventDefault() vs stopPropagation()**
+1. [x] Difference between **getElementById, getElementsByClassName, querySelector, querySelectorAll**
+2. [x] How to **create & insert a new element into DOM**
+3. [x] What is **Event Bubbling** and how it works
+4. [x] What is **Event Delegation** & why it’s useful
+5. [x] Difference between **preventDefault() vs stopPropagation()**
 
 ---
 

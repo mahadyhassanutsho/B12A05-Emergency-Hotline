@@ -1,6 +1,7 @@
 // Elements
 const lifeCountEl = document.getElementById("life-count");
 const coinCountEl = document.getElementById("coin-count");
+const copyCountEl = document.getElementById("copy-count");
 const callHistoryContainerEl = document.getElementById(
   "call-history-container"
 );
@@ -20,9 +21,9 @@ document.querySelector("main").addEventListener("click", (e) => {
 
       if (canCall) {
         const serviceData = {
-          nameEn: e.target.getAttribute("data-service-name-en"),
-          nameBn: e.target.getAttribute("data-service-name-bn"),
-          number: e.target.getAttribute("data-service-number"),
+          nameEn: e.target.parentElement.getAttribute("data-service-name-en"),
+          nameBn: e.target.parentElement.getAttribute("data-service-name-bn"),
+          number: e.target.parentElement.getAttribute("data-service-number"),
         };
 
         //   Show Alert
@@ -38,6 +39,26 @@ document.querySelector("main").addEventListener("click", (e) => {
       } else {
         alert("Not enough coins!");
       }
+      break;
+
+    // Handle Copy
+    case e.target.classList.contains("copy-one-up"):
+      const serviceData = {
+        nameEn: e.target.parentElement.getAttribute("data-service-name-en"),
+        nameBn: e.target.parentElement.getAttribute("data-service-name-bn"),
+        number: e.target.parentElement.getAttribute("data-service-number"),
+      };
+
+      // Show Alert
+      alert(
+        `Copied '${serviceData.nameEn} (${serviceData.nameBn})'s Hotline Number\n${serviceData.number}.`
+      );
+
+      //  increase Copy Count
+      copyCountEl.textContent = parseInt(copyCountEl.textContent) + 1;
+
+      // Copy to Clipboard
+      navigator.clipboard.writeText(serviceData.number);
       break;
 
     // Handle Clear Call History

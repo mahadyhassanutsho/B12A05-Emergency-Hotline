@@ -79,9 +79,9 @@ Create a `Readme.md` and answer:
 
 ## 🧪 Challenges (10 Marks)
 
-- [ ] Copy button → Show alert + increase copy count (3 Marks)
-- [ ] Copy button → Copies hotline number to clipboard (4 Marks)
-- [ ] Call button → Show **exact local time** in history (3 Marks)
+- [x] Copy button → Show alert + increase copy count (3 Marks)
+- [x] Copy button → Copies hotline number to clipboard (4 Marks)
+- [x] Call button → Show **exact local time** in history (3 Marks)
 
 ---
 

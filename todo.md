@@ -53,10 +53,10 @@
 
 ### Call Buttons
 
-- [ ] On click → Show alert with service name & number
-- [ ] Deduct **20 coins** per call
-- [ ] If coins < 20 → show alert & stop
-- [ ] Add service to **Call History** with name & number
+- [x] On click → Show alert with service name & number
+- [x] Deduct **20 coins** per call
+- [x] If coins < 20 → show alert & stop
+- [x] Add service to **Call History** with name & number
 
 ### Call History Section
 

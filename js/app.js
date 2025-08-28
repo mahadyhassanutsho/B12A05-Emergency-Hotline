@@ -51,7 +51,7 @@ document.querySelector("main").addEventListener("click", (e) => {
 
       // Show Alert
       alert(
-        `Copied '${serviceData.nameEn} (${serviceData.nameBn})'s Hotline Number\n${serviceData.number}.`
+        `Copied '${serviceData.nameEn} (${serviceData.nameBn})'s Hotline Number..`
       );
 
       //  increase Copy Count

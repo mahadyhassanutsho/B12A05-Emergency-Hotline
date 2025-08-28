@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
 
-    <link rel="shortcut icon" href="./assets/gob.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- For Intelligence -->
-    <link rel="stylesheet" href="./tailwind-intelligence.css" />
 
     <!-- Font Hind Madurai -->
     <link
@@ -42,7 +39,7 @@
         <!-- Logo -->
         <a class="flex items-center gap-2" href="/">
           <img
-            src="./assets/bangladesh-railway.png"
+            src="./assets/logo.png"
             alt="Logo"
             class="w-16 h-16 object-contain"
           />
@@ -71,7 +68,7 @@
           <button
             class="flex items-center gap-2 px-8 py-3 rounded-4xl bg-[#00a63e] text-white font-semibold text-lg border border-[#00a63e] cursor-pointer hover:bg-transparent hover:text-[#00a63e] transition-colors duration-500 ease-in-out"
           >
-            <span id="copy-count">2</span> Copy
+            <span id="copy-count">0</span> Copy
           </button>
         </ul>
       </nav>
@@ -81,7 +78,11 @@
     <div
       class="flex flex-col gap-3 justify-center items-center py-6 px-8 md:px-14 bg-[linear-gradient(90deg,#013123,#006747_50%,#013223_100%)] text-white"
     >
-      <img src="./assets/bangladesh-railway.png" alt="Logo" class="w-24 h-24" />
+      <img
+        src="./assets/logo-dark.png"
+        alt="Logo"
+        class="w-24 h-24 object-fit"
+      />
       <h1 class="font-bold text-3xl text-center">জরুরি সেবা ডিরেক্টরি</h1>
       <p class="font-semibold text-center">
         Government Emergency Services at Your Fingertip – A Project by
@@ -91,10 +92,12 @@
 
     <!-- Main Section -->
     <main
-      class="p-8 lg:p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_minmax(333px,1fr)] gap-5 bg-[#41ff6b1a]"
+      class="p-8 lg:p-10 xl:p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_minmax(333px,1fr)] grid-row-1 gap-5 items-start content-start bg-[#41ff6b1a]"
     >
       <!-- Row 1 - Cards -->
-      <div class="grid grid-rows-3 gap-5">
+      <div
+        class="lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-5"
+      >
         <!-- Card 01 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
@@ -253,11 +256,8 @@
             </button>
           </div>
         </div>
-      </div>
 
-      <!-- Row 2 - Cards -->
-      <div class="grid grid-rows-3 gap-5">
-        <!-- Card 01 -->
+        <!-- Card 04 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">
@@ -310,7 +310,7 @@
           </div>
         </div>
 
-        <!-- Card 02 -->
+        <!-- Card 05 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">
@@ -363,7 +363,7 @@
           </div>
         </div>
 
-        <!-- Card 03 -->
+        <!-- Card 06 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">
@@ -415,11 +415,8 @@
             </button>
           </div>
         </div>
-      </div>
 
-      <!-- Row 3 - Cards -->
-      <div class="grid grid-rows-3 gap-5">
-        <!-- Card 01 -->
+        <!-- Card 07 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">
@@ -472,7 +469,7 @@
           </div>
         </div>
 
-        <!-- Card 02 -->
+        <!-- Card 08 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">
@@ -525,7 +522,7 @@
           </div>
         </div>
 
-        <!-- Card 03 -->
+        <!-- Card 09 -->
         <div class="bg-white rounded-xl p-8 drop-shadow-md space-y-4">
           <!-- Card Top -->
           <div class="flex justify-between items-center">

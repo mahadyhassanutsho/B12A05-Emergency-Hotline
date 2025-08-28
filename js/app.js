@@ -8,22 +8,30 @@ const callHistoryContainerEl = document.getElementById(
 
 // Handle All Clicks from `<main></main>`
 document.querySelector("main").addEventListener("click", (e) => {
+  // Find The Closest Actionable Element
+  const target = e.target.closest(
+    ".life-one-up, .call-one-up, .copy-one-up, #clear-call-history"
+  );
+
+  // Ignoring Non-Actionable Elements
+  if (!target) return;
+
   switch (true) {
     // Handle Life
-    case e.target.classList.contains("life-one-up"):
+    case target.classList.contains("life-one-up"):
       lifeCountEl.textContent = parseInt(lifeCountEl.textContent) + 1;
       break;
 
     // Handle Call
-    case e.target.classList.contains("call-one-up"):
+    case target.classList.contains("call-one-up"):
       const coinBalance = parseInt(coinCountEl.textContent);
       const canCall = coinBalance >= 20;
 
       if (canCall) {
         const serviceData = {
-          nameEn: e.target.parentElement.getAttribute("data-service-name-en"),
-          nameBn: e.target.parentElement.getAttribute("data-service-name-bn"),
-          number: e.target.parentElement.getAttribute("data-service-number"),
+          nameEn: target.parentElement.getAttribute("data-service-name-en"),
+          nameBn: target.parentElement.getAttribute("data-service-name-bn"),
+          number: target.parentElement.getAttribute("data-service-number"),
         };
 
         //   Show Alert
@@ -42,11 +50,11 @@ document.querySelector("main").addEventListener("click", (e) => {
       break;
 
     // Handle Copy
-    case e.target.classList.contains("copy-one-up"):
+    case target.classList.contains("copy-one-up"):
       const serviceData = {
-        nameEn: e.target.parentElement.getAttribute("data-service-name-en"),
-        nameBn: e.target.parentElement.getAttribute("data-service-name-bn"),
-        number: e.target.parentElement.getAttribute("data-service-number"),
+        nameEn: target.parentElement.getAttribute("data-service-name-en"),
+        nameBn: target.parentElement.getAttribute("data-service-name-bn"),
+        number: target.parentElement.getAttribute("data-service-number"),
       };
 
       // Show Alert
@@ -62,12 +70,13 @@ document.querySelector("main").addEventListener("click", (e) => {
       break;
 
     // Handle Clear Call History
-    case e.target.id === "clear-call-history":
+    case target.id === "clear-call-history":
       callHistoryContainerEl.innerHTML = "";
       break;
 
     default:
-      console.log("Not my monkey, Not my circus!");
+      console.error("We shouldn't be here! 🤔");
+      console.error(e);
       break;
   }
 });
